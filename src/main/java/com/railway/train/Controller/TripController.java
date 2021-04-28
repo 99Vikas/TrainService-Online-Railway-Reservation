@@ -14,6 +14,7 @@ import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/train/trips")
 public class TripController {
@@ -93,7 +94,7 @@ public class TripController {
 
     @GetMapping("/get-trip-by-src-dest")
     public List<Trip> getTripsBySrcAndDest(@RequestBody TripSearchRequest tripSearchRequestBody){
-        return tripService.getAlTripsBySrcAndDest(tripSearchRequestBody.getSrcStationCode(), tripSearchRequestBody.getDestStationCode());
+        return tripService.getAllTripsBySrcAndDest(tripSearchRequestBody.getSrcStationCode(), tripSearchRequestBody.getDestStationCode());
     }
 
     @GetMapping("getFare/{tripId}/{distance}/{classes}/{qty}")

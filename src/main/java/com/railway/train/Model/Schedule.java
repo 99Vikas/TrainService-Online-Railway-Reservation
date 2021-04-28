@@ -32,7 +32,23 @@ public class Schedule {
     private int SleeperAvailableSeats;
     private String tripId;
     private String status;
+
+
+    public Schedule(LocalDate date, int firstAcSeats, int secondAcSeats, int thirdAcSeats, int firstClassSeats, int chairCarSeats, int sleeperSeats, String tripId, String number, String activeCode) {
+        this.tripDate = tripDate;
+        this.firstAcAvailableSeats = firstAcAvailableSeats;
+        this.secondAcAvailableSeats = secondAcAvailableSeats;
+        this.thirdAcAvailableSeats = thirdAcAvailableSeats;
+        FirstClassAcAvailableSeats = firstClassSeats;
+        this.chairCarAcAvailableSeats = chairCarAcAvailableSeats;
+        SleeperAvailableSeats = sleeperSeats;
+        this.tripId = tripId;
+        this.status = status;
+    }
+
     @Override
+
+
     public String toString() {
         return "TripSchedule{" +
                 "id='" + id + '\'' +

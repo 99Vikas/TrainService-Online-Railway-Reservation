@@ -45,7 +45,7 @@ public class ScheduleService {
         return scheduleRepository.findById(scheduleId);
     }
 
-    public Optional<Schedule> getTripScheduleByTripIdAndDate(String tripId, LocalDate date){
+    public Optional<Schedule> getScheduleByTripIdAndDate(String tripId, LocalDate date){
         return Optional.ofNullable(scheduleRepository.findByTripIdAndTripDate(tripId, date));
     }
 
