@@ -26,7 +26,7 @@ public class ScheduleTests {
     @DisplayName("Test Route Schedule for GetRouteSchedule")
     public void getIdTest() {
 
-        String id="01";
+        String id="6089cf04025b8e0c0db2e581";
 
         Optional<Schedule> testSchedule = scheduleRepository.findById(id);
 
@@ -35,9 +35,9 @@ public class ScheduleTests {
 
     @Test
     @DisplayName("Test Route Schedule from Route")
-    public void getRoute() {
+    public void getTripTest() {
 
-        String id="01";
+        String id="6089cf04025b8e0c0db2e581";
         Schedule testSchedule = scheduleRepository.findByTripId(id);
 
         assertNotNull(testSchedule);
