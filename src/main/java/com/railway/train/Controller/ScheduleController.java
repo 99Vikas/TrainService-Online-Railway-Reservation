@@ -3,7 +3,6 @@ package com.railway.train.Controller;
 import com.railway.train.ExceptionHanding.APIRequestException;
 import com.railway.train.ExceptionHanding.EntityNotFoundException;
 import com.railway.train.Model.Schedule;
-import com.railway.train.Model.Station;
 import com.railway.train.Model.Train;
 import com.railway.train.Model.Trip;
 import com.railway.train.Service.ScheduleService;

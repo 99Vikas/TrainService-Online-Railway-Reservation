@@ -23,4 +23,15 @@ public class Station {
     private String name;
     private String zone;
     private String state;
+
+    @Override
+    public String toString() {
+        return "Station{" +
+                "id='" + id + '\'' +
+                ", code='" + code + '\'' +
+                ", name='" + name + '\'' +
+                ", zone='" + zone + '\'' +
+                ", state='" + state + '\'' +
+                '}';
+    }
 }

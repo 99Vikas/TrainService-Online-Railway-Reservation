@@ -22,4 +22,22 @@ public class Trip {
     private String sourceStationCode;
     private String destinationStationCode;
     private String trainNo;
+
+
+    @Override
+    public String toString() {
+        return "Trip{" +
+                "tripId='" + tripId + '\'' +
+                ", baseFare=" + baseFare +
+                ", durationHrs=" + durationHrs +
+                ", durationMns=" + durationMns +
+                ", sourceStationCode='" + sourceStationCode + '\'' +
+                ", destinationStationCode='" + destinationStationCode + '\'' +
+                ", trainNo='" + trainNo + '\'' +
+                '}';
+    }
+
+
+
+
 }
